@@ -1,0 +1,66 @@
+{
+  "style_id": "field-archive-film",
+  "version": "1.0.0",
+  "duration_reference_seconds": 36.096,
+  "visual": {
+    "resolution": "3840x2160",
+    "fps": 24,
+    "estimated_segments": 43,
+    "median_active_shot_seconds": 0.67,
+    "typical_shot_range_seconds": [
+      0.3,
+      1.2
+    ],
+    "final_hold_seconds": [
+      4,
+      6
+    ]
+  },
+  "palette": [
+    "#C4CFC5",
+    "#E5EFE4",
+    "#1E2424",
+    "#3A3F40",
+    "#66584A",
+    "#889390"
+  ],
+  "composition": [
+    "top-down",
+    "frontal",
+    "macro",
+    "high symmetry",
+    "35-65% negative space",
+    "hands only"
+  ],
+  "motifs": [
+    "scientific archive",
+    "light table",
+    "technical diagrams",
+    "precision tools",
+    "magnetic powder",
+    "circles and field lines"
+  ],
+  "editing": [
+    "hard cuts",
+    "graphic matches",
+    "action matches",
+    "complex-to-simple ending"
+  ],
+  "sound": {
+    "pulse": "~80 BPM half-time / ~160 BPM subdivision",
+    "transient_rate_per_second": 2.63,
+    "layers": [
+      "drone",
+      "paper foley",
+      "metal clicks",
+      "granular textures",
+      "short impacts"
+    ]
+  },
+  "originality": [
+    "no source brand/logo",
+    "no exact shot order",
+    "no exact prop combinations",
+    "rebuild metaphor around new subject"
+  ]
+}

@@ -1,0 +1,13 @@
+interface:
+  display_name: field archive film
+  short_description: 将产品、概念或品牌主题转译成“科学档案 × 实体实验 × 物件编舞”的高质感短片。适用于品牌片、产品发布片、概念预告、AI
+    视频提示词和分镜设计。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,68 @@
+style_id: field-archive-film
+style_name: Field Archive Film
+source_analysis:
+  duration_seconds: 36.096
+  resolution: 3840x2160
+  frame_rate: 24
+  estimated_visual_segments: 43
+  median_active_shot_seconds: 0.67
+  typical_shot_range_seconds: [0.3, 1.2]
+  final_hold_seconds: [4, 6]
+  audio_pulse_interpretation: "approximately 80 BPM half-time / 160 BPM subdivision"
+  audio_transient_rate_per_second: 2.63
+creative_thesis: "Turn an abstract idea into a physical research ritual, then reduce the discovered pattern into a single brand symbol."
+keywords:
+  - scientific editorial
+  - analog laboratory
+  - archival modernism
+  - tactile intelligence
+  - object choreography
+  - light-table photography
+  - macro material study
+  - graphic match cutting
+  - restrained mystery
+  - discovery narrative
+visual_palette:
+  background_mist_green: "#C4CFC5"
+  highlight_cool_white: "#E5EFE4"
+  graphite_black: "#1E2424"
+  charcoal: "#3A3F40"
+  archive_brown: "#66584A"
+  neutral_green_gray: "#889390"
+composition:
+  dominant_views: [top-down, frontal, macro]
+  symmetry: high
+  negative_space_percent: [35, 65]
+  human_presence: "hands and forearms only"
+lighting:
+  key: "large diffuse source or backlit light table"
+  contrast: "low to medium, with brief high-contrast monochrome inserts"
+  shadows: "soft and controlled"
+materials:
+  - paper
+  - translucent film
+  - metal instruments
+  - glass
+  - magnetic powder
+  - ink
+  - embossed book covers
+editing:
+  primary_transitions: [hard cut, graphic match, action match]
+  forbidden_transitions: [glitch preset, spin, flash template, zoom tunnel]
+motion:
+  character: "precise, mechanical, restrained"
+  easing: [linear, ease-in-out]
+  forbidden: [elastic bounce, cartoon overshoot, chaotic camera shake]
+typography:
+  archive_text: [typewriter, monospace, narrow serif]
+  technical_labels: "small uppercase neutral sans"
+  brand_endcard: "clean grotesk sans"
+sound:
+  layers: [restrained drone, paper foley, metal clicks, granular texture, short low impacts]
+  voiceover: "prefer none"
+  synchronization: "cut and object contact points should be tightly sound-synced"
+originality_constraints:
+  - Do not reuse the source brand name or logo.
+  - Do not reproduce the same shot order.
+  - Do not reproduce the same exact prop combinations.
+  - Rebuild the metaphor and graphic chain around the new subject.
