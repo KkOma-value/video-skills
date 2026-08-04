@@ -1,66 +1,172 @@
 {
   "style_id": "field-archive-film",
-  "version": "1.0.0",
-  "duration_reference_seconds": 36.096,
-  "visual": {
+  "profile_version": "2.0.0",
+  "profile_kind": "source_derived_style_preset",
+  "reference_source_status": "derived_assets_only",
+  "analysis_contract": {
+    "frame_evidence": "measured",
+    "visual_observation": "observed",
+    "creative_rule": "inferred",
+    "uncertain_text_or_meaning": "uncertain",
+    "candidate_boundaries_require_visual_review": true
+  },
+  "reference_media": {
+    "container_duration_seconds": 36.096,
+    "video_stream_duration_seconds": 36.041667,
     "resolution": "3840x2160",
+    "aspect_ratio": "16:9",
     "fps": 24,
-    "estimated_segments": 43,
-    "median_active_shot_seconds": 0.67,
-    "typical_shot_range_seconds": [
-      0.3,
-      1.2
-    ],
-    "final_hold_seconds": [
-      4,
-      6
-    ]
+    "frame_count": 865,
+    "audio": {
+      "codec": "aac",
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "duration_seconds": 36.096
+    },
+    "visual_segment_estimate": {
+      "range": [40, 43],
+      "meaning": "Human estimate including weak changes and in-shot micro-beats; not a hard-cut count."
+    },
+    "machine_candidate_boundaries_default_run": 32,
+    "machine_candidate_segments_default_run": 33
   },
-  "palette": [
-    "#C4CFC5",
-    "#E5EFE4",
-    "#1E2424",
-    "#3A3F40",
-    "#66584A",
-    "#889390"
+  "phase_map": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.75,
+      "name": "archive_setup",
+      "observed": "Top-down archive table enters from darkness.",
+      "rule": "Establish the research world before explaining the subject."
+    },
+    {
+      "start_seconds": 1.75,
+      "end_seconds": 6.0,
+      "name": "archive_question",
+      "observed": "Folders, tabs, cards, diagrams and tools form rapid graphic matches.",
+      "rule": "Use paper, labels and repeated shapes as editorial grammar."
+    },
+    {
+      "start_seconds": 6.0,
+      "end_seconds": 10.96,
+      "name": "light_table_operation",
+      "observed": "Hands activate and rearrange the flat research space.",
+      "rule": "Use one deliberate physical action per beat."
+    },
+    {
+      "start_seconds": 10.96,
+      "end_seconds": 18.13,
+      "name": "physical_experiment",
+      "observed": "Tools, field drawings, powder, metal sphere, scale and monochrome material inserts alternate.",
+      "rule": "Make an abstract idea behave like a measurable physical force."
+    },
+    {
+      "start_seconds": 18.13,
+      "end_seconds": 24.5,
+      "name": "geometric_reference",
+      "observed": "Numbers, architecture, spherical imagery, compass work and field diagrams connect through circles.",
+      "rule": "Carry one geometric motif across unlike materials."
+    },
+    {
+      "start_seconds": 24.5,
+      "end_seconds": 29.63,
+      "name": "tactile_material_peak",
+      "observed": "Deep blue book, embossed pages and powder macro move toward field-line textures.",
+      "rule": "Let tactile material become the precursor of the final abstraction."
+    },
+    {
+      "start_seconds": 29.63,
+      "end_seconds": 36.096,
+      "name": "symbol_lockup",
+      "observed": "Field lines stabilize, fade, pass through small typographic variants and settle into a centered wordmark.",
+      "rule": "Reduce complexity to a new symbol without copying the source glyph transformation."
+    }
   ],
-  "composition": [
-    "top-down",
-    "frontal",
-    "macro",
-    "high symmetry",
-    "35-65% negative space",
-    "hands only"
-  ],
-  "motifs": [
+  "visual_dna": [
     "scientific archive",
-    "light table",
-    "technical diagrams",
-    "precision tools",
-    "magnetic powder",
-    "circles and field lines"
+    "analog research ritual",
+    "tactile intelligence",
+    "object choreography",
+    "light-table photography",
+    "macro material study",
+    "graphic match cutting",
+    "restrained mystery",
+    "discovery narrative",
+    "complex-to-simple lockup"
   ],
-  "editing": [
-    "hard cuts",
-    "graphic matches",
-    "action matches",
-    "complex-to-simple ending"
-  ],
-  "sound": {
-    "pulse": "~80 BPM half-time / ~160 BPM subdivision",
-    "transient_rate_per_second": 2.63,
-    "layers": [
-      "drone",
-      "paper foley",
-      "metal clicks",
-      "granular textures",
-      "short impacts"
-    ]
+  "composition": {
+    "dominant_views": ["top-down", "frontal_still_life", "macro"],
+    "symmetry": "high",
+    "negative_space_percent": [35, 65],
+    "human_presence": "hands_and_forearms_only",
+    "default_aspect_ratio": "16:9",
+    "platform_aspect_ratio_is_parameterized": true
   },
-  "originality": [
-    "no source brand/logo",
-    "no exact shot order",
-    "no exact prop combinations",
-    "rebuild metaphor around new subject"
-  ]
+  "palette_roles": {
+    "base": ["cool_mist_green", "cool_white", "low_saturation_neutrals"],
+    "structure": ["graphite_black", "charcoal", "archive_brown"],
+    "accent": ["deep_teal_blue", "dark_navy"],
+    "material_punctuation": "brief_high_contrast_monochrome",
+    "avoid": ["neon_cyberpunk", "blue_purple_gradient", "candy_color", "commercial_pure_white"]
+  },
+  "lighting": {
+    "key": "large_diffuse_source_or_backlit_light_table",
+    "contrast": "low_to_medium_with_brief_high_contrast_material_inserts",
+    "shadows": "soft_controlled_edges",
+    "avoid": ["colored_rim_light", "stage_lens_flare", "hard_product_studio_shadow"]
+  },
+  "materials": [
+    "paper",
+    "folders_and_labels",
+    "translucent_film",
+    "embossed_book_pages",
+    "metal_instruments",
+    "glass",
+    "powder_or_granular_material",
+    "ink",
+    "technical_diagrams"
+  ],
+  "motion": {
+    "camera_character": "locked_or_nearly_locked",
+    "locked_or_nearly_locked_percent": [70, 85],
+    "object_character": "precise_mechanical_restrained",
+    "preferred_actions": ["unfold", "turn_page", "align", "measure", "weigh", "attract", "cluster", "reveal", "return"],
+    "preferred_easing": ["linear", "ease_in_out"],
+    "avoid": ["elastic_bounce", "cartoon_overshoot", "chaotic_camera_shake", "unmotivated_particle_burst"]
+  },
+  "editing": {
+    "active_shot_seconds": [0.3, 1.2],
+    "opening_hold_seconds": [1.5, 2.0],
+    "final_hold_seconds": [4.0, 6.0],
+    "primary_transitions": ["hard_cut", "graphic_match", "action_match"],
+    "allowed_material_transition": "physical_material_to_line_or_field_morph",
+    "forbidden_transitions": ["glitch_preset", "spin", "flash_template", "zoom_tunnel"],
+    "tempo_curve": "dense_exploration_to_material_impact_to_stable_symbol"
+  },
+  "typography": {
+    "archive_text": ["typewriter", "monospace", "narrow_serif"],
+    "technical_labels": "small_uppercase_neutral_sans",
+    "endcard": "small_centered_clean_grotesk",
+    "source_text_is_not_reusable_copy": true
+  },
+  "sound": {
+    "voiceover": "prefer_none",
+    "layers": ["restrained_drone", "paper_foley", "metal_clicks", "granular_texture", "short_low_impacts"],
+    "sync_points": ["material_contact", "object_placement", "cut", "field_formation", "symbol_lockup"],
+    "reference_pulse_interpretation": "approximately 80 BPM half-time or 160 BPM subdivision",
+    "avoid": ["epic_orchestral", "pop_song", "continuous_whoosh", "edm_drop"]
+  },
+  "originality_constraints": [
+    "Do not reuse the source brand, logo, wordmark or readable copy.",
+    "Do not reproduce the source prop combination or shot order.",
+    "Rebuild the core metaphor, hero material and graphic chain around the new subject.",
+    "Preserve complex-to-simple structure without reproducing the source glyph morph.",
+    "Mark unreadable text and uncertain object meaning as uncertain rather than inventing facts."
+  ],
+  "generation_defaults": {
+    "style_strength": "balanced",
+    "duration_seconds": [15, 60],
+    "source_strategy": "hybrid_practical_and_controlled_generation",
+    "voiceover": false,
+    "hands_only": true
+  }
 }
