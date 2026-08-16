@@ -1,0 +1,4 @@
+interface:
+  display_name: "棱面暗黑叙事歌词片"
+  short_description: "将用户歌曲、文案和角色制作成黑红墨绿低多边形叙事歌词短片"
+  default_prompt: "Use $faceted-noir-lyric-video to turn my supplied song, characters, and motifs into a 30-second faceted narrative lyric video."
