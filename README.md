@@ -1,127 +1,31 @@
-# Field Archive Film
+# Video Skills
 
-将产品、概念或品牌主题转译成**「科学档案 × 实体实验 × 物件编舞」**风格的高质感短片。
+一个面向 AI Agent 的视频创作 Skill 合集。每个子目录都是可独立安装、触发和复用的 Skill；它们保留各自的视觉语言与创作流程。
 
-适用于品牌片、产品发布片、概念预告、AI 视频提示词生成和分镜设计。
+## 包含的 Skills
 
-## 风格概述
+| Skill | 适用场景 | 核心效果 |
+| --- | --- | --- |
+| [field-archive-film](skills/field-archive-film/) | 品牌片、概念预告、产品发布 | 科学档案、实体实验、物件编舞、发现式叙事 |
+| [faceted-noir-lyric-video](skills/faceted-noir-lyric-video/) | 歌词视频、音乐短片、叙事预告 | 黑红墨绿、纸雕低多边形、符号转化、2.5D 图形叙事 |
 
-这不是普通的"高级科技感"——而是四种语言的叠加：
+## 安装一个 Skill
 
-- **科学档案感**：技术图纸、编号、图表、打字机文字、测量标记
-- **实体触觉感**：纸张、金属、玻璃、粉末、墨迹真实存在于画面中
-- **物件编舞**：物体通过排列、展开、漂浮、吸附、对齐完成叙事
-- **发现式叙事**：从零散材料逐步揭示统一规律或核心符号
-
-核心感受：**知识不是被宣传出来，而是被观察、测量和揭示出来。**
-
-## 安装
-
-### Claude Code
+克隆合集后，将需要的子目录放入所用 Agent 的 Skills 目录：
 
 ```bash
-# 克隆到 Skills 目录
-git clone https://github.com/KkOma-value/field-archive-film.git ~/.claude/skills/field-archive-film
+git clone https://github.com/KkOma-value/video-skills.git
+cp -R video-skills/skills/faceted-noir-lyric-video ~/.codex/skills/
 ```
 
-### Codex / ChatGPT
+也可以安装 `field-archive-film`，或将对应 `SKILL.md` 与资源目录导入其他 Agent 平台。
 
-将 `agents/openai.yaml` 导入对应平台，或直接将 `SKILL.md` 内容粘贴为系统指令。
+## 使用
 
-### 其他 Agent
+附上音乐、歌词/文案、人物或产品素材，并明确所选 Skill。例如：
 
-将整个文件夹放入你的 Agent 的 skills/instructions 目录即可。
-
-## 使用方法
-
-安装后直接用自然语言触发：
-
-```
-使用 field-archive-film skill，为我的产品制作一支 30 秒发布片。
-核心概念是多智能体协作，风格强度 balanced。
+```text
+Use $faceted-noir-lyric-video to turn these materials into a 30-second narrative lyric video.
 ```
 
-### 风格强度
-
-| 参数 | 效果 |
-|------|------|
-| `light` | 仅使用色彩、留白与编辑构图 |
-| `balanced` | 默认；完整镜头和物件语法，重新设计内容 |
-| `strong` | 强化光桌、档案、实验和快速图形匹配 |
-
-### 输出内容
-
-启用后会依次输出：
-
-1. 一句话创意概念
-2. 3–5 个视觉母题
-3. 时间轴结构
-4. 完整分镜表
-5. AI 视频生成总提示词
-6. 分镜级提示词
-7. 负面提示词
-8. 声音设计说明
-9. 原创性检查结果
-
-## 文件结构
-
-```
-field-archive-film/
-├── SKILL.md                        # 完整执行规则（核心文件）
-├── README.md                       # 本文件
-├── agents/
-│   └── openai.yaml                 # OpenAI 平台适配配置
-├── assets/
-│   └── icon.svg                    # 图标
-├── examples/
-│   └── ai-workspace-example.md     # 原创应用示例
-├── references/
-│   ├── style-profile.yaml          # 机器可读风格参数
-│   ├── style-profile.json          # JSON 格式风格参数
-│   ├── source-analysis.md          # 参考视频拆解分析
-│   └── contact-sheet.jpg           # 参考视频采样（仅供理解风格）
-└── templates/
-    ├── generation-prompt.md        # 视频生成输入模板
-    └── storyboard.md              # 标准分镜表格式
-```
-
-## 视觉规范速查
-
-**色板**：雾灰绿 `#C4CFC5` / 冷白 `#E5EFE4` / 石墨黑 `#1E2424` / 炭灰 `#3A3F40` / 档案棕 `#66584A`
-
-**构图**：正顶视 + 正面平视 + 微距特写，35%–65% 负空间，人物只出现手部
-
-**节奏**：活跃镜头 0.3–1.2 秒，结尾品牌停留 4–6 秒
-
-**转场**：硬切 + 图形匹配，禁止故障/旋转/闪白模板
-
-## 适用场景
-
-- 品牌概念片、产品发布片
-- AI / 科技 / 研究类产品预告
-- 用实物隐喻表达抽象概念（AI、记忆、网络、引力、系统）
-- AI 视频生成工具（Runway、P设计
-- 分镜脚本和导演稿撰写
-
-## 不适用
-
-- 热闹生活方式广告
-- 人物对白剧情片
-- 霓虹赛博朋克风格
-- 快速 UI 功能演示
-- 夸张商业促销
-
-## 原创性原则
-
-本 Skill 只复用抽象视觉语法，**禁止**复制参考视频中的：
-
-- 品牌名称、标志和原文案
-- 相同道具组合和镜头顺序
-- 高辨识度的完整画面
-- 相同结尾变形动画
-
-每次使用必须根据新主题重新设计实验、物件链和最终符号。
-
-## License
-
-MIT
+每个 Skill 都应使用用户拥有或已获授权的素材，并仅复用抽象的视觉与剪辑语法。
